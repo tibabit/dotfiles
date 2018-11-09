@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mkdir -p ~/.tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+if [ -f "~/.tmux.conf" ]; then
+	cp "~/.tmux.conf" "~/.tmux.conf.$(date)"
+fi
+
+wget https://raw.githubusercontent.com/tibabit/dotfiles/master/tmux/airline.theme ~/.tmux/airline.theme
+wget https://raw.githubusercontent.com/tibabit/dotfiles/master/tmux/.tmux.conf -O ~/.tmux.conf
