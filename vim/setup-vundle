@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir -p ~/.vim/bundle
+cd ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git vundle
+
+if [ -f "~/.vimrc" ]; then
+	cp "~/.vimrc" "~/.vimrc.$(date)"
+fi
+wget https://raw.githubusercontent.com/tibabit/dotfiles/master/vim/.vimrc -O ~/.vimrc
