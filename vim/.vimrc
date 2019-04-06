@@ -56,7 +56,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlP .'
 Plugin 'ntpeters/vim-better-whitespace'
 
-Plugin 'tibabit/vim-todo'
 Plugin 'tibabit/vim-templates'
 Plugin 'benmills/vimux'
 map <silent><Leader>b :VimuxRunCommand("./build")<CR>
